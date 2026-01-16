@@ -1,4 +1,4 @@
-.poppins-thin {
+/* .poppins-thin {
     font-family: "Poppins", sans-serif;
     font-weight: 100;
     font-style: normal;
@@ -68,14 +68,10 @@
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: italic;
-}
+} */
 
-.poppins {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: italic;
-}
 
+/* 
 .poppins-medium-italic {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
@@ -106,11 +102,15 @@
     font-style: italic;
 }
 
+ */
 
 
 
-
-
+.poppins {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    /* font-style: italic; */
+}
 
 
 
@@ -138,9 +138,9 @@ body {
     display: flex;
     justify-content: space-between;
     gap: 100px;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     align-items: center;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     gap: 100px;
 }
 
@@ -154,7 +154,13 @@ body {
 .nav-btn:hover {
     cursor: pointer;
 }
+.nav-btn-img{
+    /* height: 0px;
+    width: 0px; */
+    border:0px;
+    background-color: #fff;
 
+}
 
 
 /* header section  */
@@ -318,13 +324,15 @@ body {
 
 .seemorebtn {
     color: #E02C6D;
-    text-align: right;
+    display: flex;
+    justify-content: right;
 
 }
 
 .seemorebtn h5 {
     margin: 0;
     padding: 10px;
+     text-align: right;
     display: flex;
     align-items: center;
 }
@@ -405,3 +413,146 @@ body {
 .footer .social-icons a:hover {
     transform: scale(1.2);
 }
+
+
+
+
+@media screen and (max-width: 576px) {
+    
+    body {
+        padding: 40px 15px 20px 15px;
+        max-width: 100%;
+    }
+    .nav-bar {
+        flex-direction: column;
+        margin-top: 20px;
+        gap: 15px;
+        font-size: 24px;
+        text-align: center;
+    }
+      .nav-right {
+        gap: 15px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .nav-btn {
+        font-size: 15px;
+        padding: 5px;
+    }
+    .header-section {
+        flex-direction: column-reverse; 
+        text-align: center;
+        gap: 20px;
+    }
+    .header-text {
+        max-width: 100%;
+    }
+
+    .header-text h4 {
+        font-size: 28px;
+        line-height: 1.3;
+    }
+    .header-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .header-image img {
+        width: 90%;
+        height: auto;
+    }
+    
+    .header-btn {
+        margin: 20px auto 0;
+        /* padding: 10px 25px; */
+        font-size: 14px;
+        border: none;
+    }
+     .shop-card {
+        margin: 30px 0;
+        padding: 15px;
+        height: auto;
+    }
+
+    .shop-site {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .shop-site img {
+        width: 60px; 
+    }
+    .all-product {
+        grid-template-columns: 1fr; 
+        gap: 20px;
+        padding: 10px;
+    }
+    .product-card {
+        margin: 0 auto;
+        width: 90%;
+    }
+    .popular-collection-card h2 {
+        font-size: 22px;
+        /* text-align: center; */
+    }
+
+
+    .last-sec {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+     .last-sec img {
+        width: 90%; /* গিয়ার ইমেজ রেসপনসিভ */
+        max-width: 300px;
+    }
+
+    .last-txt {
+        margin-left: 0;
+    }
+
+    .last-sec h3 {
+        font-size: 24px;
+    }
+
+    .last-sec p {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+     .footer h2 {
+        font-size: 18px;
+    }
+    
+    .footer p {
+        font-size: 12px;
+    }
+
+
+.header-btn {
+    color: #fff;
+    background-color: #E02C6D;
+    font-weight: bold;
+    display: inline-flex; 
+    justify-content: center;
+    align-items: center;
+    padding: 10px 25px; 
+    border-radius: 30px; 
+    gap: 10px;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    width: fit-content;
+}
+
+.header-btn img {
+    width: 20px;
+    height: auto;
+}
+
+}
+
+
+
+
+
+
